@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator Application</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="javascript/functionality.js"></script>
+        <link type="text/css" rel="stylesheet" href="styles/styling.css">
+    </head>
+
+    <body>
+
+        <h1>Calculator App</h1>
+
+        <div id="resultOutput">
+            <input type="text" id="output">
+        </div>
+
+        <div id="calculatorShell">
+        <table id="calculator">
+            <tr>
+                <td><button onclick="erase()">Clear</button></td>
+                <td><button onclick="changeSigns()">+/-</button></td>
+                <td><button onclick="percent()">%</button></td>
+                <td><button onclick="operation(event)" value="-">-</button></td>
+            </tr>
+            
+            <tr>
+                <td><button onclick="display(event)" value="1">1</button></td>
+                <td><button onclick="display(event)" value="2">2</button></td>
+                <td><button onclick="display(event)" value="3">3</button></td>
+                <td><button value="/" onclick="operation(event)">/</button></td>
+            </tr>
+
+            <tr>
+                <td><button onclick="display(event)" value="4">4</button></td>
+                <td><button onclick="display(event)" value="5">5</button></td>
+                <td><button onclick="display(event)" value="6">6</button></td>
+                <td><button value="*" onclick="operation(event)">x</button></td>
+            </tr>
+
+            <tr>
+                <td><button onclick="display(event)" value="7">7</button></td>
+                <td><button onclick="display(event)" value="8">8</button></td>
+                <td><button onclick="display(event)" value="9">9</button></td>
+                <td><button value="+" onclick="operation(event)">+</button></td>
+            </tr>
+
+            <tr>
+                <td><button id="elongate" onclick="display(event)" value="0">0</button></td>
+                <td><button onclick="display(event)" value=".">.</button></td>
+                <td><button onclick="squareRoot()">sqrt</button></td>
+                <td><button value="=" onclick="result()">=</button></td>
+            </tr>
+    
+
+        </table>
+    </div>
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+</html>
